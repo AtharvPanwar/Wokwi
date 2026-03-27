@@ -1,0 +1,13 @@
+wokwi_schema = "1.0"
+
+[wokwi]
+version = 1
+board = "esp32-devkit-v1"
+projects = [
+  { path = "./" }
+]
+firmware = ".pio/build/esp32dev/firmware.bin"
+elf = ".pio/build/esp32dev/firmware.elf"
+
+[secrets]
+GEMINI_API_KEY = "AIzaSyB9-7mJS5HEs4bqlJffbRTbdXLiRGkPVqE"

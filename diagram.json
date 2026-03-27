@@ -1,0 +1,40 @@
+{
+  "board": "esp32dev",
+  "esp32dev": {
+    "speed": 115200
+  },
+  "components": [
+    "ethernet",
+    "wifi",
+    {
+      "type": "esp32-wifi",
+      "ssid": "MyNetwork",
+      "password": "MyPassword"
+    },
+    {
+      "type": "tft-display",
+      "model": "ST7789",
+      "width": 240,
+      "height": 240,
+      "freq": 80000000,
+      "spi_clk": 40000000,
+      "dc_pin": 2,
+      "cs_pin": 5,
+      "rst_pin": 4
+    },
+    {
+      "type": "touchscreen-xpt2046",
+      "spi_clk": 5000000,
+      "dc_pin": -1,
+      "cs_pin": 13,
+      "rst_pin": -1
+    }
+  ],
+  "sdk": "arduino",
+  "blink": {
+    "led_pin": 2
+  },
+  "debug": {
+    "level": 5
+  }
+}
